@@ -67,22 +67,31 @@
     </style>
   </head>
 
-  <body class="h-full gradient-bg font-['Poppins'] text-white overflow-x-hidden">
+  <body class="relative h-full font-['Poppins'] text-white overflow-x-hidden">
+    
+    <!-- 🎥 Background Video -->
+    <video autoplay loop muted playsinline class="fixed top-0 left-0 w-full h-full object-cover -z-10">
+      <source src="video/Planet.mp4" type="video/mp4">
+    </video>
+
+    <!-- 🕶️ Overlay Gelap -->
+    <div class="fixed inset-0 bg-black/70 -z-5"></div>
+
     <main class="min-h-full flex flex-col items-center justify-center px-4 py-8">
       <div class="w-full max-w-md mx-auto space-y-8">
         
         <!-- Profile -->
-     <div class="text-center space-y-6 fade-in">
-     <div class="relative inline-block">
-     <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 p-1 profile-glow">
-      <img src="image/Azriel.jpg" 
-           alt="Foto Ahmad Azriel" 
-           class="w-full h-full object-cover rounded-full border-4 border-gray-900 shadow-lg" />
+        <div class="text-center space-y-6 fade-in">
+          <div class="relative inline-block">
+            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 p-1 profile-glow">
+              <img src="image/Azriel.jpg" 
+                   alt="Foto Ahmad Azriel" 
+                   class="w-full h-full object-cover rounded-full border-4 border-gray-900 shadow-lg" />
+            </div>
           </div>
-       </div>
-      <h1 class="text-4xl md:text-5xl font-bold gold-shimmer">AHMAD AZRIEL</h1>
-       <p class="text-lg text-gray-300 font-light"> ✨ Web Developer | UI Designer | Music Enthusiast</p>
-</div>
+          <h1 class="text-4xl md:text-5xl font-bold gold-shimmer">AHMAD AZRIEL</h1>
+          <p class="text-lg text-gray-300 font-light">✨ Web Developer | UI Designer | Music Enthusiast</p>
+        </div>
 
         <!-- Links -->
         <div class="space-y-4">
@@ -96,11 +105,11 @@
 
           <!-- WhatsApp -->
           <a href="https://api.whatsapp.com/send?phone=6285280721275&text=Halo%20Azriel!%20Saya%20tertarik%20dengan%20portofolio%20Anda."
-         target="_blank"
-        class="glow-button cyber-border w-full p-4 rounded-2xl flex items-center space-x-4 group fade-in stagger-2">
-         <i class="fab fa-whatsapp text-green-500 text-2xl icon-glow"></i>
-         <span class="flex-1 text-left font-medium">Chat with me on WhatsApp</span>
-          <i class="fas fa-arrow-right text-cyan-400"></i>
+             target="_blank"
+             class="glow-button cyber-border w-full p-4 rounded-2xl flex items-center space-x-4 group fade-in stagger-2">
+             <i class="fab fa-whatsapp text-green-500 text-2xl icon-glow"></i>
+             <span class="flex-1 text-left font-medium">Chat with me on WhatsApp</span>
+             <i class="fas fa-arrow-right text-cyan-400"></i>
           </a>
 
           <!-- Portfolio -->
